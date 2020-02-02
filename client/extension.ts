@@ -529,7 +529,7 @@ namespace display {
     const previewUri = jsonnet.canonicalPreviewUri(editor.document.uri);
 
     return vs.commands.executeCommand(
-      'vscode.previewHtml',
+      'html.showPreviewToSide',
       previewUri,
       getViewColumn(sideBySide),
       `Jsonnet preview '${path.basename(editor.document.fileName)}'`
